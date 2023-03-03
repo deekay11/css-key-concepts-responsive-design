@@ -21,5 +21,55 @@ img {
 .card-container{
     display:flex;
     flex-wrap: wrap;
-
+    justify-content: space-evenly;
 }
+h1{
+    font-size: 2.25rem;
+}
+p{
+    font-size: 0.75rem;
+}
+
+/* Media query for min-width: 700px */
+@media screen and (min-width: 700px) {
+      h1 {
+        font-size: 2.5rem; 
+      }
+      p {
+        font-size: 1.2rem; 
+      }
+    body {
+      background-color: lightblue; 
+    }
+  }
+  
+  /* Media query for min-width: 1000px */
+  @media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 3.5rem; 
+      }
+      p {
+        font-size: 1.4rem; 
+      }
+    body {
+      background-color: lightgreen; 
+        }
+  }
+  
+  /* Media query to hide cat ipsum on mobile */
+  @media screen and (max-width: 600px) {
+    .cat-ipsum {
+      display: none;
+    }
+    body{
+        background-color: #D8A47F;
+    }
+  }
+/* Media query to check for user preference for dark mode */
+@media screen and (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+      color: white;
+    }
+  }
+  
